@@ -1,0 +1,65 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Vaswani2017}
+\citation{Devlin2019}
+\citation{sanh2019distilbert}
+\citation{Zhu2020IncorporatingBI,Chen_2020}
+\citation{Papineni02bleu:a}
+\citation{tenney-etal-2019-bert}
+\citation{DBLP:journals/corr/abs-1905-06316}
+\citation{van_Aken_2019}
+\citation{ma2019universal}
+\citation{tenney-etal-2019-bert}
+\citation{ma2019universal}
+\citation{DBLP:journals/corr/abs-1902-00751}
+\citation{DBLP:journals/corr/SzegedyLJSRAEVR14,DBLP:journals/corr/Chollet16a}
+\citation{Devlin2019}
+\citation{DBLP:journals/corr/abs-1806-03822}
+\newlabel{sec:methods}{{2}{2}{Methods}{section.2}{}}
+\newlabel{eq2}{{1}{2}{Ensembling}{equation.2.1}{}}
+\citation{DBLP:journals/corr/abs-1902-00751}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:test}{{1}{3}{Architecture of our best model in relation to BERT. \textbf {Left}: BERT and its span annotation inference process. \textbf {Right}: For our model, BERT embeddings are first transformed through our custom adapter layer. Next, the last two dimensions are flattened. Optionally, a skip connection is added between the sequence outputs of the final BERT layer and this flattened representation. This is present in the best model discovered at 3/10 of an epoch, but was not necessary for the best model discovered at 1 full epoch. This tensor is then projected down to (386, 2) with a densely connected layer and split on the last axis into two model heads. These represent the logits of the start-span and end-span position.\relax }{figure.caption.1}{}}
+\newlabel{tbl:qa_3_10_Models}{{1}{4}{Models trained on embeddings at $\frac {3}{10}$ epochs\relax }{table.caption.2}{}}
+\newlabel{tbl:qa_dev_set_performance}{{2}{4}{Models trained on embeddings at $1$ epoch\relax }{table.caption.3}{}}
+\newlabel{fig:1_epoch_embeddings__adapter_386_with_skip}{{2}{4}{Training with less data\relax }{figure.caption.4}{}}
+\citation{tenney-etal-2019-bert}
+\newlabel{tbl:qa_ensembling}{{3}{5}{QA ensembling results\relax }{table.caption.5}{}}
+\newlabel{fig:bc_2_10ths_performance}{{3}{5}{2/10ths epoch model vs BERT\relax }{figure.caption.6}{}}
+\newlabel{tbl:bc_best_models}{{4}{5}{Comparison of BERT and our models performance at 1 and 3 epochs on binary classification task\relax }{table.caption.7}{}}
+\newlabel{fig:qa_correct_answers_by_model_and_type}{{4}{6}{Correctly answered percentages by model\relax }{figure.caption.8}{}}
+\newlabel{tbl:bc_bert_fine_tuning}{{5}{6}{Models trained on embeddings at 2 epochs\relax }{table.caption.9}{}}
+\bibdata{references}
+\bibcite{van_Aken_2019}{{1}{2019}{{van Aken et~al.}}{{van Aken, Winter, L\IeC {\"o}ser, and Gers}}}
+\bibcite{Chen_2020}{{2}{2020}{{Chen et~al.}}{{Chen, Trabelsi, Heflin, Xu, and Davison}}}
+\bibcite{DBLP:journals/corr/Chollet16a}{{3}{2016}{{Chollet}}{{}}}
+\bibcite{Devlin2019}{{4}{2019}{{Devlin et~al.}}{{Devlin, Chang, Lee, and Toutanova}}}
+\bibcite{DBLP:journals/corr/abs-1902-00751}{{5}{2019}{{Houlsby et~al.}}{{Houlsby, Giurgiu, Jastrzebski, Morrone, de~Laroussilhe, Gesmundo, Attariyan, and Gelly}}}
+\bibcite{ma2019universal}{{6}{2019}{{Ma et~al.}}{{Ma, Wang, Ng, Nallapati, and Xiang}}}
+\bibcite{Papineni02bleu:a}{{7}{2002}{{Papineni et~al.}}{{Papineni, Roukos, Ward, and jing Zhu}}}
+\bibcite{DBLP:journals/corr/abs-1806-03822}{{8}{2018}{{Rajpurkar et~al.}}{{Rajpurkar, Jia, and Liang}}}
+\bibcite{sanh2019distilbert}{{9}{2019}{{Sanh et~al.}}{{Sanh, Debut, Chaumond, and Wolf}}}
+\bibcite{DBLP:journals/corr/SzegedyLJSRAEVR14}{{10}{2014}{{Szegedy et~al.}}{{Szegedy, Liu, Jia, Sermanet, Reed, Anguelov, Erhan, Vanhoucke, and Rabinovich}}}
+\bibcite{tenney-etal-2019-bert}{{11}{2019{a}}{{Tenney et~al.}}{{Tenney, Das, and Pavlick}}}
+\bibcite{DBLP:journals/corr/abs-1905-06316}{{12}{2019{b}}{{Tenney et~al.}}{{Tenney, Xia, Chen, Wang, Poliak, McCoy, Kim, Durme, Bowman, Das, and Pavlick}}}
+\bibcite{Vaswani2017}{{13}{2017}{{Vaswani et~al.}}{{Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}}}
+\bibcite{DBLP:journals/corr/WuSCLNMKCGMKSJL16}{{14}{2016}{{Wu et~al.}}{{Wu, Schuster, Chen, Le, Norouzi, Macherey, Krikun, Cao, Gao, Macherey, Klingner, Shah, Johnson, Liu, Kaiser, Gouws, Kato, Kudo, Kazawa, Stevens, Kurian, Patil, Wang, Young, Smith, Riesa, Rudnick, Vinyals, Corrado, Hughes, and Dean}}}
+\bibcite{Zhu2020IncorporatingBI}{{15}{2020}{{Zhu et~al.}}{{Zhu, Xia, Wu, He, Qin, Zhou, Li, and Liu}}}
+\bibstyle{acl_natbib}
+\@input{chapters/appendix.aux}

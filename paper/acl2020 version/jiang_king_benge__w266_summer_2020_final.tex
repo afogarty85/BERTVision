@@ -1,0 +1,98 @@
+%!TEX TS-program = pdflatex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BERT Vision : UC Berkeley MIDS - W266 NLP & Deep Learning
+% MIDS Summer 2020, Section 1, Daniel Cer, PhD
+% Final : BERT Vision
+% Authors : Cristopher Benge (cris.benge@berkeley.edu)
+%			William Casey King, PhD (cking@ischool.berkeley.edu)
+%			Siduo "Stone" Jiang (siduojiang@ischool.berkeley.edu)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2020}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{floatrow}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SETUP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\UrlFont}{\ttfamily\small}
+\aclfinalcopy
+\setlength\titlebox{5cm}
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{BERTVision - A Parameter-Efficient Approach for Question Answering}
+\author{Siduo Jiang \\
+  UC Berkeley \\
+  \small{\texttt{siduojiang@berkeley.edu}}
+  \And
+  Cristopher Benge \\
+  UC Berkeley \\
+  \small{\texttt{cris.benge@berkeley.edu}}
+  \And
+  William Casey King \\
+  UC Berkeley \\
+  \small{\texttt{caseyking@berkeley.edu}}
+} 
+\date{}
+
+\newcommand\Tstrut{\rule{0pt}{2.6ex}}
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%\captionsetup{skip=2pt}
+\captionsetup{skip=0.5\baselineskip}
+\definecolor{laplane}{HTML}{00a598}
+\definecolor{berkeleyblue}{HTML}{003262}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BUILD DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+	\maketitle
+	\input{chapters/abstract}
+	\input{chapters/introduction}
+	%\input{chapters/background}
+	
+	\input{chapters/architecture}
+	
+	\input{chapters/methods}
+	\input{chapters/results}
+	\input{chapters/analysis}
+	\input{chapters/futurework}
+
+	% ---------------------------------------------------------------------------
+	% formatting examples; we will throw this out when paper is done.
+	% ---------------------------------------------------------------------------
+	%\input{formattingexamples}
+	% ---------------------------------------------------------------------------
+
+	\input{chapters/acknowledgements}
+
+	%\nocite{*}
+	\bibliography{references}
+	\bibliographystyle{acl_natbib}
+
+	\include{chapters/appendix}
+
+\end{document}
